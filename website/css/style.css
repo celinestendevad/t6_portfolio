@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "Opensans";
-    src: url(../font/OpenSans_Condensed-Regular.woff2) format(woff2); 
+    src: url(../font/OpenSans-Regular.woff2) format(woff2); 
 }
 html{
     --fs-body: 20px;
@@ -31,7 +31,7 @@ html{
 main p {
     font-family: var(--ff-main);
     font-size: var(--fs-s);
-    color: var(--sekundaer-clr);
+    color: white;
 }
 main ul{font-family: var(--ff-main);
     font-size: var(--fs-s);
@@ -51,6 +51,7 @@ h2 {
     font-size: var(--fs-xl);
     color: var(--sekundaer-clr);
     text-align: center;
+    margin: 20px;
 }
 
 h3 {
@@ -69,7 +70,7 @@ body {background-color: var(--primaer-clr);}
 header {
     color: var(--sekundaer-clr);
     font-family: var(--ff-headlines);
-    font-size: var(--fs-m);
+    font-size: var(--fs-s);
 
   }
   
