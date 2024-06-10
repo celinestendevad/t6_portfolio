@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 80px;
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (min-width: 800px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section:nth-child(4),
+    .section:nth-child(5) {
+        grid-column: span 2;
+        justify-self: center;
+    }
+}

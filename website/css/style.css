@@ -20,9 +20,9 @@ html {
 
   
   --primaer-clr: #454934;
-  --sekundaer-clr: #E7EFA6;
+  --sekundaer-clr: #E7EFA6; 
   --tridaer-clr: #A5AB83;
-  --overige-clr: #C2C89D;
+  --overige-clr: #C2C89D; 
   --box-clr: #363930;
 
   --lh-main: 2em;
@@ -38,6 +38,7 @@ body {
   font-size: var(--fs-body);
   color: var(--sekundaer-clr);
   line-height: var(--lh-main);
+  
 }
 
 main {
@@ -94,7 +95,7 @@ a{text-decoration: none;
 
 /* Baggrundsbokse */
 .section_kasse {
-  background-color: var(--overige-clr); 
+  background-color: var(--sekundaer-clr); 
   padding: 18px;
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Let skygge */
@@ -179,7 +180,7 @@ header {
 }
 
 .footer-links a {
-  color: var(--tridaer-clr);
+  color: var(--overige-clr);
   text-decoration: none;
   font-size: var(--fs-s);
 }
@@ -218,6 +219,7 @@ img {
 
 .image-container {
   margin-bottom: 50px;
+  
  
 }
 /* Billede tekst */
