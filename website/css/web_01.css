@@ -3,11 +3,13 @@
     grid-template-columns: 1fr;
     gap: 80px;
 }
+
 .section img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
+
 @media (min-width: 800px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);

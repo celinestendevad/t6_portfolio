@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/burger.css" />
-    <link rel="stylesheet" href="../css/web_01.css" />
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/burger.css">
+    <link rel="stylesheet" href="../css/web_01.css">
     <title>Grundlæggende web</title>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <div class="logo-container">
-        <a href="../index.html">
-          <img src="../img/logo_morkegroen.webp" alt="billede af logo" class="logo" />
-        </a>
-      </div>
-      <input id="menu-toggle" type="checkbox" />
-      <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      </label>
-      <nav>
-        <ul class="menu">
-          <li><a href="../index.html">Home</a></li>
-          <li><a class="active" href="portfolio.html">Portfolio</a></li>
-          <li><a href="om_mig.html">About</a</li>
-        </ul>
-      </nav>
+        <div class="logo-container">
+            <a href="../index.html">
+                <img src="../img/logo_morkegroen.webp" alt="billede af logo" class="logo">
+            </a>
+        </div>
+        <input id="menu-toggle" type="checkbox">
+        <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a href="om_mig.html">About</a></li> <!-- Lukker her -->
+            </ul>
+        </nav>
     </header>
     <main>
-
         <h2>Grundlæggende web</h2>
         <div class="grid-container">
             <div class="section">
@@ -41,9 +40,9 @@
                 <p>Formålet med denne opgave var at skabe et responsivt website ved hjælp af HTML, CSS og media queries. I denne opgave blev al indhold tildelt, og vi skulle bruge et layoutdiagram til at opbygge vores site. Derudover lærte jeg at anvende CSS grid og flexbox til layout. Dette lærte mig vigtigheden af at forstå layoutmetoder på en hjemmeside, og skabe en god struktur fra start. Den største udfordring var, at lærer og forstå grid og media queries.</p>
                 <img src="../img/ssproeve_kodning_menu2.webp" alt="Eksempel på HTML og CSS kode">
             </div>
-            <div class="section">
-                <h3>Kompetencer opnået</h3>
-                <ul>
+            <div class="section_kasse">
+                <h3 class="kasse_overskrift">Kompetencer opnået</h3>
+                <ul class="kasse_liste">
                     <li>Visual Studio Code</li>
                     <li>FileZilla</li>
                     <li>Hierarkisk mappestruktur</li>
@@ -51,14 +50,10 @@
                     <li>Media Queries</li>
                     <li>Grid</li>
                 </ul>
-                <img src="../img/ssprove_dobbel.webp" alt="Eksempel på kode">
             </div>
+            <img src="../img/ssprove_dobbel.png" alt="Eksempel på kode">
         </div>
-   
     </main>
-    
-
-
     <footer>
         <ul class="footer-links">
             <li><a class="active" href="web_01.html">01 Web</a></li>
@@ -66,9 +61,8 @@
             <li><a href="animation_03.html">03 The Fairy Tea Party</a></li>
             <li><a href="indhold_04.html">04 Passionssite</a></li>
             <li><a href="indhold_05.html">05 Virksomhedssite</a></li>
-          </ul>
-          <p class="copyright">Copyright &copy; 2024 Celine Stendevad</p>
-      
+        </ul>
+        <p class="copyright">Copyright &copy; 2024 Celine Stendevad</p>
     </footer>
-  </body>
+</body>
 </html>

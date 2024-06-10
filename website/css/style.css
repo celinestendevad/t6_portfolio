@@ -1,134 +1,198 @@
 @font-face {
-    font-family: "Magilio";
-    src: url(../font/MagilioRegular-8Mxvg.woff2) format("woff2");
+  font-family: "Magilio";
+  src: url(../font/MagilioRegular-8Mxvg.woff2) format("woff2");
 }
 
 @font-face {
-    font-family: "Opensans";
-    src: url(../font/OpenSans-Regular.woff2) format(woff2); 
+  font-family: "Opensans";
+  src: url(../font/OpenSans-Regular.woff2) format(woff2); 
 }
-html{
-    --fs-body: 20px;
-    /* default styling */
-    --fs-xxl:7rem;
-    --fs-xl: 4.5rem;
-    --fs-l: 3rem;
-    --fs-m: 1.6rem;
-    --fs-s: 1.2rem;
-    --fs-xs: 0.9rem;
-    
-    --primaer-clr: #454934;
-    --sekundaer-clr:#E7EFA6;
-    --tridaer-clr:#A5AB83;
-    --overige-clr:#C2C89D;
 
-    --lh-main: 2em;
-    
-    --ff-headlines: "Magilio", sans-serif;
-    --ff-main: "Opensans", sans-serif;
+html {
+  --fs-body: 20px;
+  --fs-xxl:7rem;
+  --fs-xl: 3.5rem;
+  --fs-l: 3rem;
+  --fs-m: 1.6rem;
+  --fs-s: 1.2rem;
+  --fs-xs: 0.9rem;
+  
+  --primaer-clr: #454934;
+  --sekundaer-clr: #E7EFA6;
+  --tridaer-clr: #A5AB83;
+  --overige-clr: #C2C89D;
+  --box-clr: #363930;
+
+  --lh-main: 2em;
+  
+  --ff-headlines: "Magilio", sans-serif;
+  --ff-main: "Opensans", sans-serif;
+}
+
+body {
+  background-color: var(--primaer-clr);
+  max-width: 1200px;
+  margin: 0 auto; /* Centrerer indholdet på skærmen */
+  font-size: var(--fs-body);
+  color: var(--sekundaer-clr);
+  line-height: var(--lh-main);
+}
+
+main {
+  padding: 0 80px; /* Tilføjer lidt plads på siderne */
 }
 
 main p {
-    font-family: var(--ff-main);
-    font-size: var(--fs-xs);
-    line-height: var(--lh-main);
-    color: white;
+  font-family: var(--ff-main);
+  font-size: var(--fs-xs);
+  line-height: var(--lh-main);
+  color: white;
+  margin-bottom: 20px;  
 }
-main ul{font-family: var(--ff-main);
-    font-size: var(--fs-s);
-    color: var(--sekundaer-clr);
-    list-style-type: disc;
-    padding: 0%;
 
+main ul {
+  font-family: var(--ff-main);
+  font-size: var(--fs-xs);
+  line-height: var(--lh-main);
+  color: var(--sekundaer-clr);
+  list-style-type: disc;
+  padding: 0;
 }
 
 h1 {
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-xl);
-    color: var(--sekundaer-clr);
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-xl);
+  color: var(--sekundaer-clr);
 }
 
 h2 {
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-xl);
-    color: var(--sekundaer-clr);
-    text-align: center;
-    margin: 4%;
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-xl);
+  color: var(--sekundaer-clr);
+  text-align: center;
+  margin: 4%;
 }
 
 h3 {
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-m);
-    color: var(--tridaer-clr);
-
-   
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-m);
+  color: var(--tridaer-clr);
 }
-h4 {font-family: var(--ff-headlines);
-    font-size: var(--fs-m);
-    color: var(--primaer-clr);}
 
-body {background-color: var(--primaer-clr);
-  max-width: 1200px;
-  padding: 0 80px; /* Tilføjer lidt plads på siderne */}
+h4 {
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-m);
+  color: var(--primaer-clr);
+}
 
+/* Baggrundsbokse */
+.section_kasse {
+  background-color: var(--overige-clr); 
+  padding: 18px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Let skygge */
+  max-width: 400px; /* Max bredde for boksen */
+  text-align: left; /* Venstrejustering af teksten */
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-m);
+  color: var(--primaer-clr);
+}
 
-/* burger menu variabler  */
+.kasse_overskrift {
+  color: var(--box-clr);
+  margin: 0%;
+}
+
+.kasse_liste {
+  color: var(--box-clr);
+}
+
+/* Knapper */
+.custom-button {
+  background-color: var(--primaer-clr); 
+  color: var(--sekundaer-clr); 
+  border: 2px solid var(--primaer-clr); 
+  border-radius: 50px; /* Afrundede hjørner */
+  padding: 10px 20px;
+  font-size: var(--fs-s);
+  font-family: var(--ff-headlines);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: var(--sekundaer-clr); /* Mørk grøn farve på hover */
+  color: var(--primaer-clr); /* Lys grøn farve for teksten på hover */
+}
+
+/* Burger menu variabler */
 header {
-    color: var(--sekundaer-clr);
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-s);
-
+  color: var(--sekundaer-clr);
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-s);
 }
-  
-  /* FOOTER */
- 
-  .footer {
-    text-align: center;
-    padding: 1em 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1em 0;
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-  }
-  
-  .footer-links li {
-    margin: 0;
-  }
-  
-  .footer-links a {
-    color: var(--tridaer-clr);
-    text-decoration: none;
-    font-size: var(--fs-s);
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline;
-    color: var(--sekundaer-clr);
-  }
-  
-  .copyright {
-    font-size: var(--fs-xs);
-    color: var(--tridaer-clr) ; 
-  }
-  #menu-toggle:checked ~ nav {
-    background-color: var(--primaer-clr); 
-    padding: 2em 0; /* Øger padding i toppen og bunden */
-    transition: background-color 0.3s ease;
-  }
 
-  .overlay-text p{
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-xs);
-    color: #FFf;
+.header a, .footer-links a {
+  color: var(--tridaer-clr);
+  text-decoration: none;
+}
 
-  }
+.header a:hover, .footer-links a:hover {
+  text-decoration: underline;
+  color: var(--sekundaer-clr);
+}
 
-  img{max-width: 100%;}
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 1em 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1em 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links a {
+  color: var(--tridaer-clr);
+  text-decoration: none;
+  font-size: var(--fs-s);
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: var(--sekundaer-clr);
+}
+
+.copyright {
+  font-size: var(--fs-xs);
+  color: var(--tridaer-clr);
+  text-align: center;
+}
+
+#menu-toggle:checked ~ nav {
+  background-color: var(--primaer-clr); 
+  padding: 2em 0; /* Øger padding i toppen og bunden */
+  transition: background-color 0.3s ease;
+}
+
+.overlay-text p {
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-xs);
+  color: #FFF;
+}
+
+img {
+  max-width: 100%;
+}

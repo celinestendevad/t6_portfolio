@@ -22,13 +22,21 @@ html{
     --tridaer-clr:#A5AB83;
     --overige-clr:#C2C89D;
 
-    
+    --lh-main: 2em;
     
     --ff-headlines: "Magilio", sans-serif;
     --ff-main: "Opensans", sans-serif;
-}
+  }
+  
+  body {background-color: var(--sekundaer-clr);
+    max-width: 1200px;
+    margin: 0 auto;
 
-main p {
+    }
+
+main{padding: 0 80px; /* Tilføjer lidt plads på siderne */}
+
+    main p {
     font-family: var(--ff-main);
     font-size: var(--fs-s);
     color: white;
@@ -63,11 +71,8 @@ h4 {font-family: var(--ff-headlines);
     font-size: var(--fs-m);
     color: var(--primaer-clr);}
 
-body {background-color: var(--sekundaer-clr);
-  max-width: 1200px;
-  padding: 0 80px; /* Tilføjer lidt plads på siderne */}
 
-
+/* Knap */
   .custom-button {
     background-color: var(--sekundaer-clr); 
     color: var(--primaer-clr); 

@@ -42,6 +42,7 @@
     opacity: 1; /* Show overlay on hover */
 }
 
+
 /* Additional styles for responsive layout */
 @media screen and (min-width: 800px) {
     .grid_1 {
