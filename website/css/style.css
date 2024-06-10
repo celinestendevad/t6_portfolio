@@ -16,6 +16,8 @@ html {
   --fs-m: 1.6rem;
   --fs-s: 1.2rem;
   --fs-xs: 0.9rem;
+  --fs-xxs: 0.7rem;
+
   
   --primaer-clr: #454934;
   --sekundaer-clr: #E7EFA6;
@@ -48,6 +50,7 @@ main p {
   line-height: var(--lh-main);
   color: white;
   margin-bottom: 20px;  
+  max-width: 50ch; /* Begræns linjelængden til 65 tegn pr. linje */
 }
 
 main ul {
@@ -85,6 +88,10 @@ h4 {
   color: var(--primaer-clr);
 }
 
+a{text-decoration: none;
+  
+}
+
 /* Baggrundsbokse */
 .section_kasse {
   background-color: var(--overige-clr); 
@@ -109,8 +116,8 @@ h4 {
 
 /* Knapper */
 .custom-button {
-  background-color: var(--primaer-clr); 
-  color: var(--sekundaer-clr); 
+  background-color: var(--sekundaer-clr); 
+  color: var(--primaer-clr); 
   border: 2px solid var(--primaer-clr); 
   border-radius: 50px; /* Afrundede hjørner */
   padding: 10px 20px;
@@ -118,11 +125,18 @@ h4 {
   font-family: var(--ff-headlines);
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 30px;
 }
-
+.custom-button a{
+  color: var(--primaer-clr);
+}
+.custom-button a:hover{
+  color: var(--sekundaer-clr);
+}
 .custom-button:hover {
-  background-color: var(--sekundaer-clr); /* Mørk grøn farve på hover */
-  color: var(--primaer-clr); /* Lys grøn farve for teksten på hover */
+  background-color: var(--primaer-clr); /* Mørk grøn farve på hover */
+  color: var(--sekundaer-clr); /* Lys grøn farve for teksten på hover */
+  border-color: var(--sekundaer-clr);
 }
 
 /* Burger menu variabler */
@@ -193,6 +207,25 @@ header {
   color: #FFF;
 }
 
+/* BILLEDER */
+
 img {
   max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+ 
+}
+
+.image-container {
+  margin-bottom: 50px;
+ 
+}
+/* Billede tekst */
+
+.billede-text {
+  margin-top: 5px;
+  text-align: center;
+  font-size: var(--fs-xxs);
+  font-style: italic;
+
 }

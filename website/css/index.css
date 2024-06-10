@@ -71,6 +71,8 @@ h4 {font-family: var(--ff-headlines);
     font-size: var(--fs-m);
     color: var(--primaer-clr);}
 
+    
+
 
 /* Knap */
   .custom-button {
@@ -83,6 +85,13 @@ h4 {font-family: var(--ff-headlines);
     font-family: var(--ff-headlines);
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-button a{
+  color: var(--primaer-clr);
+}
+.custom-button a:hover{
+  color: var(--sekundaer-clr);
 }
 
 .custom-button:hover {
