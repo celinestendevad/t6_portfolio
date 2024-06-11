@@ -50,17 +50,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
     
-    .item:nth-child(1),
-    .item:nth-child(2),
-    .item:nth-child(3) {
-        grid-area: auto;
-    }
-    
-    .item:nth-child(4),
-    .item:nth-child(5) {
-        grid-area: auto;
-    
-    }
+   
 }
 
 /* Vil gerne have mit portfoilo til at fylde længere ud  */
