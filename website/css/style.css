@@ -130,7 +130,7 @@ img {
   
 }
 
-.section img, .section iframe, .section dotlottie-player, video {
+.section img, .section iframe, .section dotlottie-player, video, image {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -139,7 +139,18 @@ img {
 }
 
 video{
-  margin-top: 1rem;
+  margin-top: 6rem;
+  
+}
+
+.image-container dotlottie-player{
+  display: block; /* Tilføjet for at gøre margin-auto effektive */
+  margin: 0 auto; /* Centrerer billederne horisontalt */}
+
+
+.image-container iframe{   display: block; /* Tilføjet for at gøre margin-auto effektive */
+  margin: 0 auto; /* Centrerer billederne horisontalt */
+  
 }
 
 /* Billede tekst */
@@ -152,8 +163,8 @@ video{
 }
 .centre {
   margin-top: 5px;
- margin-left: 50px;
- text-align: center; 
+ margin-left: 80px;
+
   font-size: var(--fs-xxs);
    font-style: italic;
 }
