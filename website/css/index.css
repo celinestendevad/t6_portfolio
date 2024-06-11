@@ -10,7 +10,7 @@
 html{
     --fs-body: 20px;
     /* default styling */
-    --fs-xxl:7rem;
+    --fs-xxl:6rem;
     --fs-xl: 4.5rem;
     --fs-l: 3rem;
     --fs-m: 1.6rem;
@@ -51,8 +51,14 @@ main ul{font-family: var(--ff-main);
 
 h1 {
     font-family: var(--ff-headlines);
-    font-size: var(--fs-xl);
+    font-size: var(--fs-xxl);
     color: var(--primaer-clr);
+    margin-top: 8em; /* Juster denne værdi for at få h1 længere ned */
+
+    margin: 0.2em 0; /* Lidt plads over og under h1 */
+    padding: 0; /* Fjern al padding */
+
+
 }
 
 h2 {
@@ -70,9 +76,19 @@ h3 {
 }
 h4 {font-family: var(--ff-headlines);
     font-size: var(--fs-m);
-    color: var(--primaer-clr);}
+    color: var(--primaer-clr);
+    margin: 1em 0; 
+  padding: 0;}
 
     
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block; /* Tilføjet for at gøre margin-auto effektive */
+  margin: 0 auto; /* Centrerer billederne horisontalt */
+ 
+}
 
 
 /* Knap */
@@ -86,6 +102,7 @@ h4 {font-family: var(--ff-headlines);
     font-family: var(--ff-headlines);
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0.5em;
 }
 
 .custom-button a{
@@ -235,3 +252,17 @@ header {
       text-align: center;
     }
   }
+
+  /* Layout styling */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 80px;
+}
+
+@media (min-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deler indholdet i to kolonner */
+    gap: 20px; /* Afstand mellem kolonnerne */
+  }}

@@ -122,7 +122,7 @@ img {
 
 .billede-text {
   margin-top: 5px;
-  text-align: center;
+ /*  text-align: center; */
   font-size: var(--fs-xxs);
   font-style: italic;
 
