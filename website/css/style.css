@@ -51,7 +51,7 @@ main p {
   line-height: var(--lh-main);
   color: white;
   margin-bottom: 20px;  
-  max-width: 50ch; /* Begræns linjelængden til 65 tegn pr. linje */
+  max-width: 50ch; /* Begræns linjelængden til 50 tegn pr. linje */
 }
 
 main ul {
@@ -76,6 +76,12 @@ h2 {
   text-align: center;
   margin: 4%;
 }
+/* Styler min h2 på min om mig side til at */
+.right{
+  text-align: left;
+}
+
+
 
 h3 {
   font-family: var(--ff-headlines);
@@ -242,4 +248,9 @@ header {
   font-family: var(--ff-headlines);
   font-size: var(--fs-xs);
   color: #FFF;
+}
+.background{
+  background-color: #E7EFA6;
+  margin: 0;
+
 }
