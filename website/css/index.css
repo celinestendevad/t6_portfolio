@@ -34,7 +34,8 @@ html{
 
     }
 
-main{padding: 0 80px; /* Tilføjer lidt plads på siderne */}
+main{padding: 0 80px; /* Tilføjer lidt plads på siderne */
+}
 
     main p {
     font-family: var(--ff-main);

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/burger.css" />
     <link rel="stylesheet" href="../css/indhold_04.css" />
     <title>Grundlæggende indhold 04</title>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
   </head>
 <body>
   <header>
@@ -32,7 +33,7 @@
   <div class="grid-container">
     <div class="grid-item">
       <h3>Introduktion til Temaet</h3>
-      <p>I dette tema var vores første gruppeopgave, det introducerede os til indholdsproduktionens verden. Vi lærte om præproduktion, produktion og postproduktion. Fik kendskab til kamera,
+      <p>Dette tema var vores første gruppeopgave, det introducerede os til indholdsproduktionens verden. Vi lærte om præproduktion, produktion og postproduktion. Fik kendskab til kamera,
         mikrofon, Adobe Premiere Pro og Lottiefiles i After effects. Dette tema var designet til at give os de nødvendige færdigheder til selv at kunne producere mindre indholdsproduktioner og kommunikere professionelt med kunder.</p>      
 
       <h3>Passionssite</h3>
@@ -60,27 +61,41 @@
     <button class="custom-button"><a href="http://celinestendevad.dk/kea/05_indhold/passionssite/website/">Passionssite</a></button>
     <button class="custom-button"><a href="https://www.youtube.com/watch?v=7bRIegcqbgo">Video</a></button>
     
-  
-
-
     </div>
+    
+
+
+
+
     
     <div class="grid-item">
       <div class="image-container">
         <img src="../img/passion_anna1.png" alt="Introduktion til Temaet">
         <p class="billede-text">Anna</p>
       </div>
+
       <div class="image-container">
         <img src="../img/passion_blomst2.png" alt="Startskærm">
         <p class="billede-text">Billede produktion</p>
       </div>
+
       <div class="image-container">
-        <img src="../img/passion_lottie3.png" alt="Spilskærm">
-        <p class="billede-text">Lottiefile</p>
+        <dotlottie-player src="https://lottie.host/d0d701b1-1968-485c-a180-32d9c0591c73/mrjN0vgWzF.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        <p class="billede-text">Min Lottiefile lavet i after effects</p>
       </div>
+
       <div class="image-container">
-        <img src="../img/passion_lotti4.png" alt="Timer kode">
-        <p class="billede-text">Lottiefile</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/7bRIegcqbgo?si=_MMRwiEqFz1vYBDb"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p class="billede-text">Video</p>
       </div>
     </div>
   </div>
@@ -95,3 +110,4 @@
       </ul>
       <p class="copyright">Copyright &copy; 2024 Celine Stendevad</p></footer>
 </body>
+</html>
