@@ -1,2 +1,22 @@
 .section_kasse img{width: 95%;
 ;}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 80px;
+}
+
+
+@media (min-width: 800px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+
+    .background {
+        background-color: #E7EFA6;
+        width: 100vw; /* Gør elementet lige så bredt som viewportens bredde */
+        margin-left: calc(50% - 50vw); /* Trækker halvdelen af viewportens bredde fra elementets venstre margin */
+        padding: 20px; /* Valgfrit: tilføjer padding for indre afstand */
+        box-sizing: border-box; /* Sørger for, at padding bliver en del af elementets bredde */
+      }

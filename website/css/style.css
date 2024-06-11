@@ -99,6 +99,24 @@ a{text-decoration: none;
   
 }
 
+.background p{
+  color: var(--primaer-clr);
+margin-left: 90px;}
+.background h3{
+  color: var(--primaer-clr);
+  margin-left: 90px;
+}
+
+.centre p{
+  margin-top: 5px;
+  /*  text-align: center; */
+   font-size: var(--fs-xxs);
+   font-style: italic;
+}
+
+
+
+
 /* BILLEDER */
 
 img {
@@ -116,12 +134,16 @@ img {
 }
 
 
-.section img, .section iframe, .section dotlottie-player {
+.section img, .section iframe, .section dotlottie-player, video {
   width: 100%;
   height: auto;
   border-radius: 8px;
   display: block; /* Tilføjet for at gøre margin-auto effektive */
   margin: 0 auto; /* Centrerer billederne horisontalt */
+}
+
+video{
+  margin-top: 1rem;
 }
 
 /* Billede tekst */
@@ -131,8 +153,14 @@ img {
  /*  text-align: center; */
   font-size: var(--fs-xxs);
   font-style: italic;
-
 }
+.centre {
+  margin-top: 5px;
+ text-align: center; 
+  font-size: var(--fs-xxs);
+   font-style: italic;
+}
+
 
 
 /* Baggrundsbokse */
